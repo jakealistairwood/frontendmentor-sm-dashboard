@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <title>Frontend Mentor | Social Media Dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="light-mode">
+  <section id="hero">
+    <div class="container">
+      <div class="social-media-dashboard">
+        <div class="dashboard-header">
+          <div class="dashboard-header-left">
+            <h1 class="main-heading">Social Media Dashboard</h1>
+            <p class="total-followers">Total Followers: 23,004</p>
+          </div>
+          <div class="dashboard-header-right">
+            <p class="button-info">Dark Mode</p>
+            <label class="dark-light-switch">
+              <input type="checkbox" id="check-box">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="dashboard-cards grid">
+          <div class="dashboard-fb-info card">
+            <div class="sm-profile">
+              <img src="./images/icon-facebook.svg" alt="facebook-logo"><p class="sm-handle">@nathanf</p>
+            </div>
+            <h2 class="followers-number">1987</h2>
+            <p class="followers-title">FOLLOWERS</p>
+            <p class="followers-today green"><i class="fas fa-caret-up"></i> 12 Today</p>
+          </div>
+          <div class="dashboard-tw-info card">
+            <div class="sm-profile">
+              <img src="./images/icon-twitter.svg" alt="twitter-logo"><p class="sm-handle">@nathanf</p>
+            </div>
+            <h2 class="followers-number">1044</h2>
+            <p class="followers-title">FOLLOWERS</p>
+            <p class="followers-today green"><i class="fas fa-caret-up"></i> 99 Today</p>
+          </div>
+          <div class="dashboard-ig-info card">
+            <div class="sm-profile">
+              <img src="./images/icon-instagram.svg" alt="instagram-logo"><p class="sm-handle">@realnathanf</p>
+            </div>
+            <h2 class="followers-number">11k</h2>
+            <p class="followers-title">FOLLOWERS</p>
+            <p class="followers-today green"><i class="fas fa-caret-up"></i> 1099 Today</p>
+          </div>
+          <div class="dashboard-yt-info card">
+            <div class="sm-profile">
+              <img src="./images/icon-youtube.svg" alt="youtube-logo"><p class="sm-handle">Nathan F.</p>
+            </div>
+            <h2 class="followers-number">8239</h2>
+            <p class="followers-title">SUBSCRIBERS</p>
+            <p class="followers-today red"><i class="fas fa-caret-down"></i> 144 Today</p>
+          </div>
+        </div>
+      </div>
+      <div class="daily-overview">
+        <h2 class="overview-heading">Overview - Today</h2>
+        <div class="sm-overview grid">
+          <div class="sm-info card">
+            <div class="sm-info-top">
+              <p class="overview-card-title">Page Views</p><img src="images/icon-facebook.svg">
+            </div>
+            <div class="sm-info-bottom">
+              <h4>87</h4>
+              <p class="sm-growth green"><i class="fas fa-caret-up"></i> 3%</p>
+            </div>
+          </div>
+          <div class="sm-info card">
+            <div class="sm-info-top">
+              <p class="overview-card-title">Likes</p><img src="images/icon-facebook.svg">
+            </div>
+            <div class="sm-info-bottom">
+              <h4>52</h4>
+              <p class="sm-growth red"><i class="fas fa-caret-down"></i> 2%</p>
+            </div>
+          </div>
+          <div class="sm-info card">
+            <div class="sm-info-top">
+              <p class="overview-card-title">Likes</p><img src="images/icon-instagram.svg">
+            </div>
+            <div class="sm-info-bottom">
+              <h4>5462</h4>
+              <p class="sm-growth green"><i class="fas fa-caret-up"></i> 2257%</p>
+            </div>
+          </div>
+          <div class="sm-info card">
+            <div class="sm-info-top">
+              <p class="overview-card-title">Profile Views</p><img src="images/icon-instagram.svg">
+            </div>
+            <div class="sm-info-bottom">
+              <h4>52k</h4>
+              <p class="sm-growth green"><i class="fas fa-caret-up"></i> 1375%</p>
+            </div>
+          </div>
+          <div class="sm-info card">
+            <div class="sm-info-top">
+              <p class="overview-card-title">Retweets</p><img src="images/icon-twitter.svg">
+            </div>
+            <div class="sm-info-bottom">
+              <h4>117</h4>
+              <p class="sm-growth green"><i class="fas fa-caret-up"></i> 303%</p>
+            </div>
+          </div>
+          <div class="sm-info card">
+            <div class="sm-info-top">
+              <p class="overview-card-title">Likes</p><img src="images/icon-twitter.svg">
+            </div>
+            <div class="sm-info-bottom">
+              <h4>507</h4>
+              <p class="sm-growth green"><i class="fas fa-caret-up"></i> 553%</p>
+            </div>
+          </div>
+          <div class="sm-info card">
+            <div class="sm-info-top">
+              <p class="overview-card-title">Likes</p><img src="images/icon-youtube.svg">
+            </div>
+            <div class="sm-info-bottom">
+              <h4>107</h4>
+              <p class="sm-growth red"><i class="fas fa-caret-down"></i> 19%</p>
+            </div>
+          </div>
+          <div class="sm-info card">
+            <div class="sm-info-top">
+              <p class="overview-card-title">Total Views</p><img src="images/icon-youtube.svg">
+            </div>
+            <div class="sm-info-bottom">
+              <h4>1407</h4>
+              <p class="sm-growth red"><i class="fas fa-caret-down"></i> 12%</p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
